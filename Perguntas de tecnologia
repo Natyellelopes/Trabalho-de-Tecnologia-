@@ -1,0 +1,72 @@
+Qual a diferença entre as tags Kb> e <p>?
+
+A tag `<p>` é usada para definir parágrafos em documentos HTML, agrupando blocos de texto que formam um parágrafo e adicionando espaço visual entre os parágrafos. Por exemplo:
+
+```html
+<p>Este é um parágrafo de exemplo.</p>
+```
+
+Já a tag `<kb>` é utilizada para indicar entrada de teclado, representando o texto que o usuário deve digitar ou inserir via teclado. Geralmente, o texto dentro de `<kb>` é mostrado em uma fonte monoespaçada para distingui-lo do texto normal. Exemplo:
+
+```html
+<p>Para salvar, pressione <kb>Ctrl</kb> + <kb>S</kb>.</p>
+```
+
+Resumindo, `<p>` é usado para estruturar parágrafos de texto, enquanto `<kb>` é usado para destacar entrada de teclado em documentos HTML. Cada uma dessas tags desempenha um papel específico na formatação e organização do conteúdo na web.
+
+
+
+2) Qual o evro na linha de código <p Tcenter» Texto </p< center›?
+
+O erro na linha de código `<p Tcenter» Texto </p< center›` envolve vários aspectos relacionados à estrutura incorreta das tags HTML e à sintaxe mal formada. Vamos resumir os problemas identificados:
+
+1. **Uso incorreto da tag `<p>`**:
+   - A tag `<p>` é usada para definir parágrafos de texto no HTML. Ela deve ser aberta com `<p>` e fechada com `</p>`. No código fornecido, há um fechamento incorreto da tag `<p`, que é `</p<`, o que não é reconhecido como uma tag válida.
+
+2. **Atributo desconhecido `Tcenter`**:
+   - Não existe um atributo `Tcenter` reconhecido pelo HTML. Se a intenção era centralizar o texto dentro do parágrafo, deveria ser utilizado o atributo CSS `style="text-align: center;"` diretamente na tag `<p>`.
+
+3. **Uso incorreto da tag `<center>`**:
+   - A tag `<center>` era usada anteriormente para centralizar conteúdo na página, mas não é recomendada no HTML5 e versões mais recentes. No código fornecido, a tag `<center›` está com um caractere de fechamento errado (`‹` ao invés de `<`) e não está sendo fechada corretamente (`</center>`).
+
+4. **Sintaxe mal formada**:
+   - O código contém caracteres inválidos e está mal estruturado, o que pode levar a problemas na renderização pelos navegadores.
+
+Para corrigir esses problemas e centralizar corretamente o texto dentro de um parágrafo, deve-se utilizar a seguinte sintaxe:
+
+```html
+<p style="text-align: center;">Texto</p>
+```
+
+Nesta correção:
+- `style="text-align: center;"` é um estilo CSS embutido que define o alinhamento do texto dentro da tag `<p>`.
+- Esta é a forma correta e recomendada de centralizar conteúdo no HTML5 e garante que o texto dentro do parágrafo seja exibido centralizado na página web.
+
+Explique como funciona a tag ‹ a href »?
+A tag `<a href>` é usada em HTML para criar links. Ela tem a seguinte estrutura:
+
+```html
+<a href="URL">Texto do Link</a>
+```
+
+- **`<a>`**: Tag de abertura para criar o link.
+- **`href`**: Atributo que especifica o destino do link.
+- **`URL`**: O destino do link (pode ser um site, um arquivo, uma seção da mesma página, etc.).
+- **`Texto do Link`**: O texto clicável que será exibido.
+
+Exemplos:
+
+1. Link para uma página externa:
+   ```html
+   <a href="https://www.exemplo.com">Visite o Exemplo</a>
+   ```
+
+2. Link para uma página interna:
+   ```html
+   <a href="pagina2.html">Ir para a Página 2</a>
+   ```
+
+3. Link para uma seção da mesma página:
+   ```html
+   <a href="#secao1">Vá para a Seção 1</a>
+   ```
